@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="css/style.css" />
 
     <!--Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
 
     <!-- link to font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
@@ -27,7 +30,7 @@
             </a>
         </div>
 
-        <nav>
+        <nav class="top-nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="index.html#services">Services</a></li>
@@ -39,20 +42,17 @@
         <div class="hamburger">
             <a href="#"> <i class="fas fa-bars"></i></a>
         </div>
-
     </header>
 
     <main>
-        <section class="top-section" id="home">
+        <section class="top-section">
             <img src="images/kid.jpg" alt="Hero Image" title="Hero Image">
-            <h1 class="hello"> TO SWIN OR NOT TO SWIN? THERE IS NO QUESTION</h1>
-            <a href="index.html#services">
-                <p>SERVICES</p>
-            </a>
+            <h1 class="hello"> TO SWIN OR NOT TO SWIM? THERE IS NO QUESTION</h1>
+            <!-- <a href="index.html#services"><p class="service-button"> SERVICES</p></a> -->
         </section>
-
+        
         <section>
-            <h2>SWIM CLASSES WITH CANDACE HUMMER</h2>
+            <h2>SWIM CLASSES WITH <br/> CANDACE HUMMER</h2>
             <div class="topics">
                 <h3>FUN</h3>
                 <p>Learn to swim having fun! Tailored Classes for swimmers based on skill level.</p>
@@ -69,9 +69,11 @@
 
         <section>
             <h2>SERVICES</h2>
-            <div class="lesson">
+            <div>
                 <img src="images/class1.jpeg" alt="swim class">
-                <h3 class="service-title"> PRIVATE 1:1 LESSON</h3>
+            </div>
+            <div class="lesson">
+                <h4 class="service-title"> PRIVATE 1:1 LESSON</h4>
                 <P>Duration: 20 minutes</P>
                 <p>Description: This will be a private one on one lesson in which we will work on the skills your child
                     needs in order to be safe and efficient in the pool all while still having fun! </p>
@@ -79,15 +81,19 @@
             </div>
             <div class="lesson">
                 <img src="images/class2.jpg" alt="swim class">
-                <h3 class="service-title"> FAMILY SWIM LESSON</h3>
+            </div>
+            <div class="lesson">
+                <h4 class="service-title"> FAMILY SWIM LESSON</h4>
                 <P>Duration: 30 minutes</P>
                 <p>Description: A family swim lesson is available for up to 3 children. I will do my best to keep the
                     time similar between the children and will be taught similar to a private 1:1 lesson. </p>
                 <P>Cost: $30 dollars</P>
             </div>
-            <div class="lesson">
+            <div>
                 <img src="images/class3.jpg" alt="swim class">
-                <h3 class="service-title"> COMPETITIVE TECNIQUE LESSON</h3>
+                <h4 class="service-title"> COMPETITIVE TECNIQUE LESSON</h4>
+                </div>
+            <div class="lesson">
                 <P>Duration: 20 minutes</P>
                 <p>Description: This type of one-on-one private lesson focuses on proper techniques to make your child
                     more efficient and is geared towards those wanting to become a competitive swimmer or is already a
@@ -97,14 +103,14 @@
                     endurance and continue to work on stroke technique.
                 </p>
                 <P>Cost: $45 dollars</P>
-
+            </div>
                 <a href="contact.html" target="_blank">
                     <h2>CONTACT ME TO SCHEDULE YOUR FIRST CLASS</h2>
                 </a>
             </div>
         </section>
         <footer>
-            <nav>
+            <nav class="bottom-nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="index.html#services">Services</a></li>
