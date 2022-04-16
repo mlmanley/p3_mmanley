@@ -52,9 +52,12 @@ img {
   width: 100%;
 }
 
-/* ===============================
- Homepage Styling - Header
-================================== */
+/*=======================================
+
+HOME PAGE - Header
+
+========================================*/
+
 
 header {
   background-color: #662190;
@@ -155,7 +158,7 @@ i {
 
 /*=======================================
 
-Topics Section
+HOME PAGE - Topics Section
 
 ========================================*/
 
@@ -185,37 +188,116 @@ Topics Section
 
 /*=======================================
 
-Lessons Section
+HOME PAGE - Services Section
 
 ========================================*/
-
-.lesson {
-  position: relative;
+.lesson-type h4 {
+  margin-bottom: 5px;
 }
 
 .lesson-type {
-  position: absolute;
-  margin-top: -295px;
-  max-width: 80%;
-  margin-left: 20px;
+
 }
 
-.lesson-middle {
-  text-align: right;
-  margin-left: 55px;
-}
 
-.lesson-type.lesson-bottom {
-  margin-top: -570px;
-}
-
-.lesson.wave-bottom img {
-  min-height: 605px;
-}
 
 .contact-me {
   margin: 60px 5px;
 }
+
+
+/*=======================================
+
+About Page
+
+========================================*/
+
+.about-me {
+    margin-bottom: 20px;
+}
+
+.about-me img {
+  max-width: 370px;
+  border-radius: 6px;
+}
+
+.about-me li::before {
+  display: inline-block;
+    content: '';
+    -webkit-border-radius: 0.375rem;
+    border-radius: 0.375rem;
+    height: 0.75rem;
+    width: 0.75rem;
+    margin-right: 0.5rem;
+    background-color: #662190;
+}
+
+.about-me h1 {
+    text-align: center;
+    margin: 50px 0 30px 0;
+}
+
+.about-box {
+  max-width: 900px;
+  background-color: aliceblue;
+}
+
+.personal,
+.philosophy {
+  margin: 30px;
+  padding: 30px;
+}
+
+.background {
+  padding: 20px 30px;
+}
+
+.background h2 {
+  padding: 20px 20px 40px 20px;
+}
+
+.about-me p {
+  margin-top: 20px;
+}
+
+.quote {
+    max-width: 280px;
+    text-align: center;
+    margin: 10px auto;
+    font-family: 'Montserrat';
+    font-size: 1.2em;
+}
+
+.about-me li {
+  padding: 4px;
+  margin: 0 30px;
+}
+
+/*=======================================
+
+Contact Page
+
+========================================*/
+
+.contact-page {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.contact-page h1 {
+  text-align: center;
+}
+
+.contact-page img {
+  max-width: 400px;
+}
+
+
+
+.contact-info {
+  margin: 60px 10px 40px 20px;
+}
+
 /*=======================================
 
 Footer
@@ -240,38 +322,6 @@ footer {
   color: #3499cc;
 }
 
-/*=======================================
-
-About Page
-
-========================================*/
-
-.about-me {
-    margin-bottom: 20px;
-}
-
-.about-me img {
-    max-width: 400px;
-    margin-top: 10px;
-}
-
-.about-me h1 {
-    text-align: center;
-    margin: 50px 0 30px 0;
-}
-
-.quote {
-    max-width: 280px;
-    text-align: center;
-    margin: 10px auto;
-    font-family: 'Montserrat';
-    font-size: 1.2em;
-}
-
-.about-me li {
-    padding: 4px;
-    margin: 0 10px;
-}
 /*=======================================
 
 Media Queries
@@ -328,16 +378,54 @@ Media Queries
     margin: 40px;
   }
 
-/* About styling */
+/* ======= Home styling ============*/
+
+.lesson-wrap {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  background-color: #59cfda;
+  margin-bottom: 20px;
+}
+
+.lesson {
+  display: inherit;
+}
+
+.middle {
+  flex-direction: row;
+}
+
+.lesson-middle {
+  margin-right: 10px;
+}
+
+.lesson-type {
+  max-width: 45%;
+  margin-left: 8px;
+}
+
+.lesson img {
+  margin: 0;
+  padding: 0;
+}
+
+/* ======== About styling ============ */
 
 .about-me {
     max-width: 70%;
     margin: 10px auto;
 }
 
-.about-me img {
-    max-width: 300px;
-    border-radius: 6px;
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-box {
+  max-width: 900px;
+  background-color: aliceblue;
 }
 
 .quote {
@@ -350,33 +438,24 @@ Media Queries
     text-align: right;
 }
 
-.personal, 
-.background, 
-.philosophy {
+.about-flex {
     display: flex;
-    max-width: 75%;
-    margin: 20px auto;
-}
-
-.personal li,
-.philosophy li {
-    max-width: 80%;
-    margin: 10px 42px;
-}
-
-.background li {
-    max-width: 80%;
-    margin: 5px 0 0 10px;
-    text-align: right;
+    justify-content: center;
 }
 
 .background {
     flex-direction: row-reverse;
-    margin: 10px;
-
 }
 
-/* footer styling */
+/* ========= Contact Page styling ============== */
+
+.contact-wrapper {
+  display: flex;
+  background-color: aliceblue;
+  padding: 60px;
+}
+
+/* ========== footer styling ================== */
     
 .bottom-nav li {
     display: inline-block;
