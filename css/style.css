@@ -54,7 +54,7 @@ img {
 
 /*=======================================
 
-HOME PAGE - Header
+HOME PAGE - Nav
 
 ========================================*/
 
@@ -102,10 +102,15 @@ header {
   bottom: 0;
   right: 0;
   left: 0;
-  height: 140px;
+  height: 253px;
   width: 100%;
   background: #662190cc;
   text-align: center;
+}
+
+.top-nav ul li a {
+  color: #3499cc;
+  text-shadow: 5px 5px 15px #837373;
 }
 
 .top-nav ul,
@@ -134,26 +139,38 @@ ul li li a:hover {
   display: none;
 }
 
-/*  CHANGE SIZE!!!!
-i {
-    max-width: 250px;
-} */
 
-.top-section img {
-  max-width: 100%;
-}
 
-/* .top-section {
-  position: relative;
-} */
+/*=======================================
+
+HOME PAGE - Hero
+
+========================================*/
+
 
 .hello {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 0.9em;
-    text-shadow: 9px 9px 10px #837373;
-    position: absolute;
-    bottom: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 0.7em;
+  text-shadow: 5px 5px 15px #837373;
+  position: absolute;
+  bottom: 0;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.top section h1 {
+  margin: 10px;
+}
+
+
+.logo {
+  width: 140px;
+  position: absolute;
+  z-index: 99;
+  left: 0;
+  margin: 15px;
+  text-shadow: 5px 5px 15px #837373;
 }
 
 /*=======================================
@@ -163,22 +180,24 @@ HOME PAGE - Topics Section
 ========================================*/
 
 .topics-wrapper {
-  display: flex;
-  align-content: center;
-  justify-content: center;
+  display: block;
 }
 
-.topics {
+.topics-wrapper.desktop {
+  display: none;
+}
+
+.topics-inside {
   background-color: #662190;
   border-radius: 50%;
   text-align: center;
-  width: 230px;
-  height: 230px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 40px;
+  margin: 0 auto;
+  padding: 45px 0;
+  max-width: 200px;
 }
 
 .topics p {
@@ -195,14 +214,25 @@ HOME PAGE - Services Section
   margin-bottom: 5px;
 }
 
-.lesson-type {
-
+.lesson-type p {
+  line-height: 1.8;
 }
 
+.lesson-wrap {
+  background-color: #59cfda;
+  margin-bottom: 20px;
+}
 
+.lesson-type {
+  padding: 0 30px 25px 30px;
+}
 
 .contact-me {
   margin: 60px 5px;
+}
+
+#services {
+  margin: 0 15px;
 }
 
 
@@ -216,9 +246,23 @@ About Page
     margin-bottom: 20px;
 }
 
+.about-box {
+  background-color: #f0f8ff;
+  margin: 30px;
+  padding: 1px 20px 30px 20px;
+}
+
+
+
 .about-me img {
   max-width: 370px;
   border-radius: 6px;
+  width: inherit;
+}
+
+.img-container {
+  text-align: center;
+  margin-bottom: 15px;
 }
 
 .about-me li::before {
@@ -237,20 +281,6 @@ About Page
     margin: 50px 0 30px 0;
 }
 
-.about-box {
-  max-width: 900px;
-  background-color: aliceblue;
-}
-
-.personal,
-.philosophy {
-  margin: 30px;
-  padding: 30px;
-}
-
-.background {
-  padding: 20px 30px;
-}
 
 .background h2 {
   padding: 20px 20px 40px 20px;
@@ -281,10 +311,14 @@ Contact Page
 
 .contact-page {
   max-width: 80%;
-  margin: 0 auto;
+  margin: 40px auto;
 }
 
 .contact-page h1 {
+  text-align: center;
+}
+
+.contact-photo {
   text-align: center;
 }
 
@@ -292,11 +326,23 @@ Contact Page
   max-width: 400px;
 }
 
-
-
 .contact-info {
   margin: 60px 10px 40px 20px;
+  font-size: 1.1em;
 }
+
+.contact-info a {
+  font-family: 'Montserrat';
+  text-decoration: none;
+  margin: 5px 10px 10px 13px;
+  line-height: 2;
+}
+
+.contact-wrapper {
+  background-color: #f0f8ff;
+  padding: 20px;
+}
+
 
 /*=======================================
 
@@ -328,7 +374,43 @@ Media Queries
 
 ========================================*/
 
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+.about-me img {
+  width: 100%;
+}
+}
+
 @media screen and (min-width: 767px) {
+  .top-section h1 {
+    font-size: 1.4em;
+  }
+
+    .logo {
+      width: 245px;
+  }
+
+  .bottom-nav li {
+    display: inline-block;
+}
+
+.bottom-nav ul {
+  text-align: center;
+}
+
+.lesson-middle {
+  padding-left: 20px;
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 820px) {
+
+.about-wrapper {
+  padding: 40px;
+}
+}
+
+@media screen and (min-width: 821px) {
   header {
     position: relative;
   }
@@ -338,7 +420,6 @@ Media Queries
     height: 100%;
     width: auto;
     display: block;
-    background-color: ;
   }
 
   nav ul {
@@ -365,17 +446,13 @@ Media Queries
     margin: 0 auto;
   }
 
-  .topics {
-    background-color: #662190;
-    border-radius: 50%;
-    text-align: center;
-    width: 230px;
-    height: 230px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 40px;
+  .logo {
+    width: 480px;
+    position: absolute;
+    z-index: 99;
+    left: 0;
+    margin-top: 40px;
+    text-shadow: 5px 5px 15px #837373;
   }
 
 /* ======= Home styling ============*/
@@ -383,9 +460,25 @@ Media Queries
 .lesson-wrap {
   display: flex;
   flex-direction: row-reverse;
+}
+
+.topics-wrapper.mobile {
+  display: none;
+}
+
+.topics-wrapper.desktop {
+  display: flex;
+}
+
+.topics-wrapper {
+  display: flex;
+  align-content: center;
   justify-content: center;
-  background-color: #59cfda;
-  margin-bottom: 20px;
+}
+
+.desktop .topics {
+  margin: 40px;
+  max-width: 210px;
 }
 
 .lesson {
@@ -402,12 +495,15 @@ Media Queries
 
 .lesson-type {
   max-width: 45%;
-  margin-left: 8px;
 }
 
 .lesson img {
   margin: 0;
   padding: 0;
+}
+
+.top-section h1 {
+  font-size: 2em;
 }
 
 /* ======== About styling ============ */
@@ -425,7 +521,6 @@ Media Queries
 
 .about-box {
   max-width: 900px;
-  background-color: aliceblue;
 }
 
 .quote {
@@ -451,18 +546,38 @@ Media Queries
 
 .contact-wrapper {
   display: flex;
-  background-color: aliceblue;
+  background-color: #f0f8ff;
+  padding: 60px;
+  justify-content: center;
+}
+
+.contact-wrapper {
   padding: 60px;
 }
 
+
+
 /* ========== footer styling ================== */
-    
-.bottom-nav li {
-    display: inline-block;
-    text-align: center;
+
+.bottom-nav {
+  text-align: center;
 }
 
 footer {
     margin-top: 50px;
 }
+
+}
+
+@media screen and (min-width: 1440px) {
+
+  .lesson-type {
+    padding: 25px 20px 35px 45px;
+    font-size: 1.2em;
+  }
+
+  .lesson-middle {
+    padding: 25px 35px 35px 16px;
+}
+
 }

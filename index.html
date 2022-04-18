@@ -21,10 +21,13 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
 
+    <!-- Carrousel -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+   
 
 </head>
 
-<body>
+<body class=>
     <header>
         <div class="logo-container">
             <a href="index.html">
@@ -35,12 +38,12 @@
         <nav class="top-nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#services">Services</a></li>
+                <li><a href="#services">Services</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="schedule.html">Class Schedule</a></li>
-                <li class="logo-fb"><a href="https://www.facebook.com/mermaidsntadpoles/?ref=page_internal" target="_blank"> <i
-                            class="fab fa-facebook"></i></a></li>
+                <li class="logo-fb"><a href="https://www.facebook.com/mermaidsntadpoles/?ref=page_internal"
+                        target="_blank"> <i class="fab fa-facebook"></i></a></li>
             </ul>
         </nav>
         <div class="hamburger">
@@ -51,18 +54,41 @@
     <main>
         <section class="top-section">
             <img src="images/kid.jpg" alt="Hero Image" title="Hero Image">
+            <img class="logo" src="images/logo-purple.png" alt="Logo">
             <h1 class="hello"> TO SWIN OR NOT TO SWIM?<br /> THERE IS NO QUESTION</h1>
-            <!-- <a href="index.html#services"><p class="service-button"> SERVICES</p></a> -->
         </section>
 
         <section class="container">
             <section>
                 <h2>SWIM CLASSES WITH <br /> CANDACE HUMMER</h2>
-                <div class="topics-wrapper">
+                <div class="topics-wrapper mobile">
+                    <div class="carousel">
+                        <div class="topics">
+                            <div class="topics-inside">
+                                <h3>FUN</h3>
+                                <p>Learn to swim having fun,classes for all skill levels.</p>
+                            </div>
+                        </div>
+                        <div class="topics">
+                            <div class="topics-inside">
+                                <h3>SAFE</h3>
+                                <p>#1 priority is water safety, then working on the skills to swim.</p>
+                            </div>
+                        </div>
+                        <div class="topics">
+                            <div class="topics-inside">
+                                <h3>TRUSTWORTHY</h3>
+                                <p>More than 30 years experience in swim lessons.</p>           
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="topics-wrapper desktop">
                     <div class="topics">
                         <div class="topics-inside">
                             <h3>FUN</h3>
-                            <p>Learn to swim having fun! Tailored Classes for swimmers based on skill level.</p>
+                            <p>Learn to swim having fun, classes for all skill levels.</p>
                         </div>
                     </div>
                     <div class="topics">
@@ -74,60 +100,64 @@
                     <div class="topics">
                         <div class="topics-inside">
                             <h3>TRUSTWORTHY</h3>
-                            <p>More than 30 years experiencein swim lessons.</p>
+                            <p>More than 30 years experience in swim lessons.</p>           
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section>
+            <section id="services">
                 <h2>SERVICES</h2>
-                <div class="lesson-wrap">                    
+                <div class="lesson-wrap">
                     <div class="lesson">
                         <img src="images/class1w.jpg" alt="swim class">
                     </div>
-                    <div class="lesson-type">
+                    <div class="lesson-type lesson-top">
                         <h4 class="service-title"> PRIVATE 1:1 LESSON</h4>
                         <P>Duration: 20 minutes</P>
-                        <p>Description: This will be a private one on one lesson in which we will work on the skills your child
+                        <p>Description: This will be a private one on one lesson in which we will work on the skills
+                            your child
                             needs in order to be safe and efficient in the pool all while still having fun! </p>
                         <P>Cost: $20 dollars</P>
                     </div>
                 </div>
-                
-                <div class="lesson-wrap middle"> 
+
+                <div class="lesson-wrap middle">
                     <div class="lesson">
                         <img src="images/class2w.jpg" alt="swim class">
                     </div>
                     <div class="lesson-type lesson-middle">
                         <h4 class="service-title"> FAMILY SWIM LESSON</h4>
                         <P>Duration: 30 minutes</P>
-                        <p>Description: A family swim lesson is available for up to 3 children. I will do my best to keep the
+                        <p>Description: A family swim lesson is available for up to 3 children. I will do my best to
+                            keep the
                             time similar between the children and will be taught similar to a private 1:1 lesson. </p>
                         <P>Cost: $30 dollars</P>
                     </div>
                 </div>
 
-                <div class="lesson-wrap"> 
+                <div class="lesson-wrap">
                     <div class="lesson">
                         <img src="images/class3w.jpg" alt="swim class">
                     </div>
                     <div class="lesson-type lesson-bottom">
                         <h4 class="service-title"> COMPETITIVE TECNIQUE LESSON</h4>
                         <P>Duration: 20 minutes</P>
-                        <p>Description: This type of one-on-one private lesson focuses on proper techniques to make your child
-                            more efficient and is geared towards those wanting to become a competitive swimmer or is already a
+                        <p>Description: This type of one-on-one private lesson focuses on proper techniques to make your
+                            child
+                            more efficient and is geared towards those wanting to become a competitive swimmer or is
+                            already a
                             competitor but looking to refine their strokes.</p>
                         <P>Cost: $45 dollars</P>
                     </div>
-                 </div>
+                </div>
                 <div class="contact-me">
                     <a href="contact.html" target="_blank">
                         <h2>CONTACT ME TO SCHEDULE YOUR FIRST CLASS</h2>
                     </a>
                 </div>
             </section>
-        </section>    
+        </section>
     </main>
     <footer>
         <nav class="bottom-nav">
@@ -141,7 +171,12 @@
             </ul>
         </nav>
     </footer>
+    
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/scripts.js" type="text/javascript"></script>
+
 </body>
 
 </html>
