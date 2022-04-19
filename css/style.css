@@ -131,9 +131,6 @@ ul li a:hover {
   transition: 0.3s;
 }
 
-ul li li a:hover {
-  border-bottom: 2px solid #ff7b53;
-}
 
 .top-nav {
   display: none;
@@ -247,7 +244,7 @@ About Page
 }
 
 .about-box {
-  background-color: #f0f8ff;
+  background-color: rgb(240, 248, 255);
   margin: 30px;
   padding: 1px 20px 30px 20px;
 }
@@ -368,11 +365,37 @@ footer {
   color: #3499cc;
 }
 
+
+
+/*=======================================
+
+Schedule styling
+
+========================================*/
+
+.scheduling h1 {
+  text-align: center;
+}
+
 /*=======================================
 
 Media Queries
 
 ========================================*/
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  
+  .scheduling h1 {
+    font-size: 1.4em;
+  }
+
+  .scheduling h2 {
+    font-size: 1.3em;
+
+  }
+
+}
+
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
 
