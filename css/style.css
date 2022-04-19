@@ -249,8 +249,6 @@ About Page
   padding: 1px 20px 30px 20px;
 }
 
-
-
 .about-me img {
   max-width: 370px;
   border-radius: 6px;
@@ -365,8 +363,6 @@ footer {
   color: #3499cc;
 }
 
-
-
 /*=======================================
 
 Schedule styling
@@ -376,6 +372,7 @@ Schedule styling
 .scheduling h1 {
   text-align: center;
 }
+
 
 /*=======================================
 
